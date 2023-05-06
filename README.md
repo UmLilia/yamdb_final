@@ -1,5 +1,7 @@
+
+![yamdb_workflow](https://github.com/UmLilia/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
+
 # Проект YaMDb
-![yamdb_workflow](https://github.com/github/docs/actions/workflows/yamdb_workflow.yml/badge.svg)
 ### Технологии
 Python 3.7, Django 3.2, DRF, JWT + Djoser
 

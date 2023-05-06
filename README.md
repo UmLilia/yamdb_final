@@ -40,11 +40,3 @@ docker-compose exec web python manage.py collectstatic --no-input
 '''
 - Создаем дамп базы данных:
 docker-compose exec web python manage.py dumpdata > dumpPostrgeSQL.json
-
-### Шаблон наполнения .env
-DB_ENGINE=django.db.backends.postgresql
-DB_NAME=postgres
-POSTGRES_USER=postgres
-POSTGRES_PASSWORD=postgres
-DB_HOST=db
-DB_PORT=5432

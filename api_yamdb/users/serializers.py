@@ -5,7 +5,6 @@ from rest_framework.serializers import ValidationError
 
 from .validators import valid_username
 
-
 User = get_user_model()
 
 

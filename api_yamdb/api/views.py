@@ -12,15 +12,10 @@ from reviews.models import Category, Comment, Genre, Review, Title
 from .filters import TitleFilter
 from .pagination import PagePagination
 from .permissions import AdminOrReadOnly, IsAdmin, IsObjectOwner
-from .serializers import (
-    CategorySerializer,
-    CommentSerializer,
-    GenreSerializer,
-    ListTitleSerializer,
-    PostTitleSerializer,
-    ReviewSerializer,
-    UserSerializer,
-)
+from .serializers import (CategorySerializer, CommentSerializer,
+                          GenreSerializer, ListTitleSerializer,
+                          PostTitleSerializer, ReviewSerializer,
+                          UserSerializer)
 
 User = get_user_model()
 

@@ -1,6 +1,8 @@
 
 ![yamdb_workflow](https://github.com/UmLilia/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
+https://158.160.45.175/
+
 # Проект YaMDb
 ### Технологии
 Python 3.7, Django 3.2, DRF, JWT + Djoser

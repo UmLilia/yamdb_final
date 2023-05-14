@@ -2,10 +2,12 @@ from django.core.validators import MaxValueValidator, MinValueValidator
 from django.db import models
 from users.models import User
 
-from .mixins import (GenreCategoryAbstractModel,
-                     GenreCategoryTitleAbstractModel,
-                     ReviewCommentAbstractModel)
 from .validators import validate_year
+from .mixins import (
+    GenreCategoryTitleAbstractModel,
+    GenreCategoryAbstractModel,
+    ReviewCommentAbstractModel,
+)
 
 
 class Genre(GenreCategoryTitleAbstractModel, GenreCategoryAbstractModel):

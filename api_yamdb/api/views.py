@@ -12,10 +12,15 @@ from reviews.models import Category, Comment, Genre, Review, Title
 from .filters import TitleFilter
 from .pagination import PagePagination
 from .permissions import AdminOrReadOnly, IsAdmin, IsObjectOwner
-from .serializers import (CategorySerializer, CommentSerializer,
-                          GenreSerializer, ListTitleSerializer,
-                          PostTitleSerializer, ReviewSerializer,
-                          UserSerializer)
+from .serializers import (
+    CategorySerializer,
+    CommentSerializer,
+    GenreSerializer,
+    ListTitleSerializer,
+    PostTitleSerializer,
+    ReviewSerializer,
+    UserSerializer,
+)
 
 User = get_user_model()
 
@@ -124,10 +129,11 @@ class CommentViewSet(viewsets.ModelViewSet):
     pagination_class = PagePagination
 
     def get_queryset(self):
-        return Comment.objects.filter(
+        new_queryset = Comment.objects.filter(
             review__title_id=self.kwargs.get('title_id'),
             review_id=self.kwargs.get('review_id'),
         ).select_related('author')
+        return new_queryset
 
     def perform_create(self, serializer):
         current_review = get_object_or_404(Review, pk=self.kwargs['review_id'])

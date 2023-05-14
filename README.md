@@ -1,7 +1,8 @@
 
 ![yamdb_workflow](https://github.com/UmLilia/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
-https://158.160.45.175/
+158.160.45.175/admin/
+158.160.45.175/redoc/
 
 # Проект YaMDb
 ### Технологии
